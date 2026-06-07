@@ -74,7 +74,7 @@ const problemSchema = new mongoose.Schema<IProblem>({
 
 problemSchema.index({title:1});
 problemSchema.index({difficulty:1})
-//this is bascially a comound index which will help us to fetch the problems based on difficulty and also sort them based on createdat  sso that i can newer question wiht easy or medium or hard....
+//this is bascially a comound index which will help us to fetch the problems based on difficulty and also sort them based on createdat  sso that if i get the  newer question wiht easy or medium or hard....
 problemSchema.index({
     difficulty: 1,
     createdAt: -1
